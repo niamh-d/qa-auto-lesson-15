@@ -11,7 +11,7 @@ const TODO_ITEMS = [
 ] as const;
 
 test.describe('New Todo', () => {
-  test.only('should allow me to add todo items', async ({ page }) => {
+  test('should allow me to add todo items', async ({ page }) => {
     // create a new todo locator
     const newTodo = page.getByPlaceholder('What needs to be done?');
 
